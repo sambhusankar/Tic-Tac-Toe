@@ -95,7 +95,7 @@ table tr td:hover{
 .scores p{
   margin-top: 3px;
   display:block;
-  line-height: 5vw;
+  padding-bottom:10%;
   font-weight: bold;
   font-size: 100%;
 }
