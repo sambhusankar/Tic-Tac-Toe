@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Poppins&display=swap');
+*{
+  margin:0;
+  padding:0;
+ 
+}
+body{
+  text-align:center;
+  background: #36454F;
+}
+nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  font-size:7vw;
+  width:100vw;
+}
+.infobox{
+  border-radius:0.5rem;
+  color:#d6d5d2;
+  background:#507dad;
+  padding:0 10px;
+  display:flex;
+  align-items: center ;
+  height:9.5vw;
+}
+p{
+  display:inline;
+}
+i{
+  background:#93b4bf;
+  color:#505961;
+  padding:0.5rem;
+  border:1px solid black;
+  border-radius:0.5rem;
+}
+i:hover{
+  background:#4c9fba;
+}
+table{
+  margin:auto;
+  margin-top:2rem;
+}
+table tr td{
+    background:#507dad;
+    height:20vw;
+    width:20vw;
+    text-align:center;
+    font-size:245%;
+    border-radius:0.5rem;
+  
+  }
+table tr td:hover{
+  background: #325f8f;
+}
+
+.show-win{
+  margin:auto;
+  color:white;
+  font-size:5vw;
+  transition: width 0.5s ease;
+  background:#5d8c83;
+  border-radius:0.5rem;
+  padding:7px;
+  width:0;
+  position: absolute;
+  top:49.4vw;
+  left:20vw;
+  visibility:hidden;
+}
+.scores{
+  margin-top:1.5rem;
+  display:flex;
+  justify-content:space-around;
+}
+.scores .x_score{
+  width:20vw;
+  height:13vw;
+  background :aqua;
+  border-radius:0.5rem;
+}
+.scores .ties{
+  width:20vw;
+  height:13vw;
+  background :#eee;
+  border-radius:0.5rem;
+  
+}
+.scores .o_score{
+  width:20vw;
+  height:13vw;
+  background :yellow;
+  border-radius:0.5rem;
+}
+.scores p{
+  margin-top: 3px;
+  display:block;
+  line-height: 3vw;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+@media(min-width:500px){
+  .game{
+   display:flex;
+   justify-content: space-around;
+  }
+  table tr td{
+    width:10vw;
+    height:10vw;
+  }
+  .scores{
+    flex-direction: column;
+    padding: auto;
+  }
+  .scores .x_score,  .scores .o_score, .scores .ties{
+    height: 15vh;
+    margin-bottom: 0.5rem;
+  }
+  
+  .show-win{
+    top:49vh;
+  }
+}

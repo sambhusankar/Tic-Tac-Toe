@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="tic-tac-toe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <title>Page title</title>
+</head>
+<body>
+  
+  <nav>
+  <div>
+    <span style="color:yellow; font-size:15vw">×</span>
+    <span style="color:aqua;  font-size:15vw">o</span>
+  </div>
+  <div class="infobox">
+  <span id="turns" style="color:yellow"></span>
+  <p> TURN<p>
+  </div>
+  <i class="fa-solid fa-rotate-right" id="reset"></i>
+  </nav>
+  <div class="game">
+  
+  <div class="game-view">
+  <table>
+    <tr>
+      <td id=1 class="plyrs"></td>
+      <td id=2 class="plyrs"></td>
+      <td id=3 class="plyrs"></td>
+    </tr>
+    <tr>
+      <td id=4 class="plyrs"></td>
+      <td id=5 class="plyrs"></td>
+      <td id=6 class="plyrs"></td>
+    </tr>
+    <tr>
+      <td id=7 class="plyrs"></td>
+      <td id=8 class="plyrs"></td>
+      <td id=9 class="plyrs"></td>
+    </tr>
+  </table>
+  <div class="show-win" id="show-win"></div>
+  </div>
+  <div class="scores">
+    <div class="x_score">
+      <p>× (You)</p>
+      <p id="x_score"></p>
+    </div>
+    <div class="ties">
+      <p>Ties</p>
+      <p id="ties"></p>
+    </div>
+    <div class="o_score">
+      <p>o (cpu)</p>
+      <p id="o_score"></p>
+    </div>
+  </div>
+  </div>
+  <script src="tic-tac-toe.js"></script>
+</body>
+</html>
